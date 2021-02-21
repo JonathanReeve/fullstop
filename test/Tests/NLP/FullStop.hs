@@ -38,7 +38,7 @@ suite =
   ]
 
 testCaseNoSplit d x = testCaseSegments d [x] x
-testCaseSegments d xs x = testCase d $ assertEqual "" xs (segment x)
+testCaseSegments d xs x = testCase d $ Test.HUnit.assertEqual "" xs (segment x)
 
 -- TODO: perhaps create a newtype that skews the random generation of tests
 -- towards things that look more like text (but not too much, because we still
