@@ -51,6 +51,6 @@ test-suite hstest-fullstop
   build-depends:   base
                ,   fullstop
                ,   HUnit
-               ,   tasty < 0.8
+               ,   tasty
                ,   tasty-hunit
                ,   tasty-quickcheck
